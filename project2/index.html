@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User inform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <h1>User Information</h1>
+            <field>
+                <label for="username">Name</label>
+                <input id="username" name="username" type="text" placeholder="Enter your fullname">
+                <small class="error"></small>
+            </field>
+            <field>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" placeholder="Enter your email address">
+                <small class="error"></small>
+            </field>
+
+            <field>
+                <label for="postalcode">Canadian postalcode</label>
+                <input id="postalCode" name="postalcode" type="text" placeholder="Enter your postalcode">
+                <small class="error"></small>
+            </field>
+            <field>
+                <label for="city">City:</label>
+                <select id="city"class="city" >
+                    <option >Please select your city</option>
+                  <option >Quebec</option>
+                  <option >Montreal</option>
+                  <option >Sherbrooke</option>
+                  <option >Longueuil</option>
+                  <option >Joliette</option>
+                </select>
+                <button id="removeCityButton" >Remove City</button>
+            </field>
+            <field>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Enter your password">
+                <i class="bi bi-eye-slash" id="toggleVisibility"></i>
+                
+               
+                <small class="error"></small>
+            
+            
+            <field>
+            <label for="retypePassword">Confirm Password </label>
+            <input id="retypePassword"name="retypePassword" type="password" placeholder="Confirm your Password">
+            <i class="bi bi-eye-slash" id="toggleVisibility2"></i>
+            <small class="error"></small>
+            </field>
+         
+            <button type="submit" >Submit</button>
+        </form>
+    </div>
+  
+
+</body>
+</html>
